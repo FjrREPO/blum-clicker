@@ -122,7 +122,7 @@ class BlumClicker:
         return False
 
     async def run(self) -> None:
-        """Runs the clicker."""
+        """Jalankan clicker."""
 
         try:
             window = next(
@@ -138,9 +138,9 @@ class BlumClicker:
                 logger.error(WINDOW_NOT_FOUND)
                 return
 
-            logger.info("Initialized blum-clicker!")
-            logger.info(f"Found blum window: {window[0].title}")
-            logger.info("Press 's' to start the program.")
+            logger.info("Inisialisasi blum clicker!")
+            logger.info(f"Blum telah ditemukan: {window[0].title}")
+            logger.info("Tekan 's' untuk start.")
 
             while True:
                 if await self.handle_input():
